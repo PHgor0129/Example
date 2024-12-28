@@ -42,17 +42,5 @@ def test_greedy_max_cut():
     S1 = greedy_max_cut(G1)
     print("Cut set S:", S1)
     print("Cut value:", cut_value(S1, G1))
-
-    G2 = {
-        0: [1, 2],
-        1: [0, 3],
-        2: [0, 3, 4],
-        3: [ 1, 2, 4],
-        4: [2, 3]
-    }
-    
-    S2 = greedy_max_cut(G2)
-    print("Cut set S:", S2)
-    print("Cut value:", cut_value(S2, G2))
     
 test_greedy_max_cut()
