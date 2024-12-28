@@ -1,0 +1,166 @@
+\bibliographystyle{alpha}
+
+% Packages 
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{todonotes}
+\usepackage{tcolorbox}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[nameinlink,capitalise]{cleveref} 
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{algpseudocode}
+\usepackage{algorithm2e}
+\usepackage[T1]{fontenc}
+\usepackage{minted}
+\usepackage{pdfpages}
+
+% Custom Commands
+\newcommand{\vc}{{\sf Vertex Cover}}
+\newcommand{\setc}{{\sf Set Cover}}
+\newcommand{\tsat}{{\sf 3SAT}}
+\newcommand{\inds}{{\sf Independent}{\sf Set}}
+\newcommand{\clq}{{\sf Clique}}
+\newcommand{\minds}{{\sf Maximal }{\sf Independent}{\sf Set}}
+\newcommand{\bc}{\underline{Base case}: }
+\newcommand{\ih}{\\\underline{Inductive hypothesis}: }
+\newcommand{\is}{\\\underline{Inductive step}: }
+
+
+
+% Define theorem environments with section-based numbering
+\newtheorem{clm}{Claim}[section]
+\newtheorem{defn}{Definition}[section]
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{fact}{Fact}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{remark}{Remark}[section]
+\newtheorem{obv}{Observation}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{prob}{Problem}[section]
+\newtheorem{question}{Question}[section]
+\newtheorem{sol}{Solution}[section]
+\newtheorem{equ}{Equation}[section]
+\newtheorem{formula}{Formula}[section]
+
+% Math bfs..
+\newcommand{\bA}{\mathbf{A}}
+\newcommand{\bB}{\mathbf{B}}
+\newcommand{\bC}{\mathbf{C}}
+\newcommand{\bD}{\mathbf{D}}
+\newcommand{\bE}{\mathbf{E}}
+\newcommand{\bF}{\mathbf{F}}
+\newcommand{\bG}{\mathbf{G}}
+\newcommand{\bH}{\mathbf{H}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bJ}{\mathbf{J}}
+\newcommand{\bK}{\mathbf{K}}
+\newcommand{\bL}{\mathbf{L}}
+\newcommand{\bM}{\mathbf{M}}
+\newcommand{\bN}{\mathbf{N}}
+\newcommand{\bO}{\mathbf{O}}
+\newcommand{\bP}{\mathbf{P}}
+\newcommand{\bQ}{\mathbf{Q}}
+\newcommand{\bR}{\mathbf{R}}
+\newcommand{\bS}{\mathbf{S}}
+\newcommand{\bT}{\mathbf{T}}
+\newcommand{\bU}{\mathbf{U}}
+\newcommand{\bV}{\mathbf{V}}
+\newcommand{\bW}{\mathbf{W}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bZ}{\mathbf{Z}}
+
+% Math bbs.. {H, L, O, P, S} can't be defined
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\G}{\mathbb{G}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\J}{\mathbb{J}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\M}{\mathbb{M}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\U}{\mathbb{U}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\W}{\mathbb{W}}
+\newcommand{\X}{\mathbb{X}}
+\newcommand{\Y}{\mathbb{Y}}
+\newcommand{\Z}{\mathbb{Z}}
+
+
+%%%%%% cals..
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cJ}{\mathcal{J}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cZ}{\mathcal{Z}}
+
+%%% fraks
+\newcommand{\fA}{\mathfrak{A}}
+\newcommand{\fB}{\mathfrak{B}}
+\newcommand{\fC}{\mathfrak{C}}
+\newcommand{\fD}{\mathfrak{D}}
+\newcommand{\fE}{\mathfrak{E}}
+\newcommand{\fF}{\mathfrak{F}}
+\newcommand{\fG}{\mathfrak{G}}
+\newcommand{\fH}{\mathfrak{H}}
+\newcommand{\fI}{\mathfrak{I}}
+\newcommand{\fJ}{\mathfrak{J}}
+\newcommand{\fK}{\mathfrak{K}}
+\newcommand{\fL}{\mathfrak{L}}
+\newcommand{\fM}{\mathfrak{M}}
+\newcommand{\fN}{\mathfrak{N}}
+\newcommand{\fO}{\mathfrak{O}}
+\newcommand{\fP}{\mathfrak{P}}
+\newcommand{\fQ}{\mathfrak{Q}}
+\newcommand{\fR}{\mathfrak{R}}
+\newcommand{\fS}{\mathfrak{S}}
+\newcommand{\fT}{\mathfrak{T}}
+\newcommand{\fU}{\mathfrak{U}}
+\newcommand{\fV}{\mathfrak{V}}
+\newcommand{\fW}{\mathfrak{W}}
+\newcommand{\fX}{\mathfrak{X}}
+\newcommand{\fY}{\mathfrak{Y}}
+\newcommand{\fZ}{\mathfrak{Z}}
+
+% Color Text Box 
+\newenvironment{tbox}[2]{%
+  \begin{tcolorbox}[colback=#1!5,colframe=#1!40!black,title=#2]%
+}{%
+  \end{tcolorbox}%
+}
+
+% Algorithm environment 

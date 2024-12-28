@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Button Detection - Index Page</title>
+</head>
+<body>
+
+<h1>Back Button Detection Example</h1>
+<p>This is the first page. Click the link below to go to the "next page".</p>
+
+<!-- Link to simulate going to the next page -->
+<a href="next-page.html" id="goNextPageLink">Go to Next Page</a>
+
+<script>
+    // Push the initial state for the first page when the page loads
+    window.history.pushState({ page: 1 }, "First Page", window.location.href);
+</script>
+
+</body>
+</html>
